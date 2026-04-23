@@ -1,0 +1,28 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_shop_page",
+          "name": "test_remove_products",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: TypeError: 'NoneType' object cannot be interpreted as an integer\nDetails: page = <Page url='https://rahulshettyacademy.com/angularpractice/shop'>\n\n    def test_remove_products(page):\n        shop_page = ShopPage(page)\n        shop_page.navigate_shop_page()\n        expect(page).to_have_url(\"https://rahulshettyacademy.com/angularpractice/shop\")\n        categories = shop_page.categories()\n        assert categories == ['Category 1', 'Category 2', 'Category 3']\n        product_names, _ = shop_page.products()\n        print(product_names)\n        page.wait_for_timeout(5000)\n        check_out_value = shop_page.validate_check_out_button()\n        print(check_out_value)\n        assert \"Checkout ( 2 )\" in check_out_value\n        shop_page.click_check_out_button()\n        page.wait_for_timeout(10000)\n        phone_added = shop_page.products_added()\n        print(phone_added)\n        assert phone_added == product_names\n>       remove_products= shop_page.remove_products()\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntests\\test_shop_page.py:41: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <pages.shop_page.ShopPage object at 0x0000022950A45940>\n\n    def remove_products(self):\n        remove=self.products_added()\n        for i in range(len(remove)-1):\n>           value= remove.pop(self._remove_products.nth(i).click())\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           TypeError: 'NoneType' object cannot be interpreted as an integer\n\npages\\shop_page.py:64: TypeError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "22 Apr 2026, 16:48",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

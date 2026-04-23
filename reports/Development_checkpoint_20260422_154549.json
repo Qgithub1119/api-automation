@@ -1,0 +1,28 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_shop_page",
+          "name": "test_shop_page_categories",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: AssertionError: assert ['Nokia Edge', 'Blackberry'] == 2\nDetails: page = <Page url='https://rahulshettyacademy.com/angularpractice/shop'>\n\n    def test_shop_page_categories(page):\n        shop_page= ShopPage(page)\n        shop_page.navigate_shop_page()\n        expect(page).to_have_url(\"https://rahulshettyacademy.com/angularpractice/shop\")\n        categories = shop_page.categories()\n        assert categories ==  ['Category 1', 'Category 2', 'Category 3']\n    \n        product_names = shop_page.products()\n        print(product_names)\n        page.wait_for_timeout(5000)\n        check_out_value= shop_page.validate_check_out_button()\n        print(check_out_value)\n        assert \"Checkout ( 2 )\" in check_out_value\n        shop_page.click_check_out_button()\n        page.wait_for_timeout(10000)\n        phone_added = shop_page.products_added()\n        print(phone_added)\n>       assert phone_added == product_names[1]\nE       AssertionError: assert ['Nokia Edge', 'Blackberry'] == 2\n\ntests\\test_shop_page.py:23: AssertionError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "22 Apr 2026, 15:46",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

@@ -1,0 +1,39 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_api",
+          "name": "test_get_user[users]",
+          "developer": "-",
+          "test_description": "",
+          "status": "Passed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "tests.test_api",
+          "name": "test_post_user",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Setup failed: playwright_instance = <playwright._impl._playwright.Playwright object at 0x00000228F93CA510>, request = <SubRequest 'api_request_context' for <Function test_post_user>>\n\n    @pytest.fixture\n    def api_request_context(playwright_instance, request):\n>       service = request.param\n                  ^^^^^^^^^^^^^\nE       AttributeError: 'SubRequest' object has no attribute 'param'\n\nconftest.py:53: AttributeError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "23 Apr 2026, 15:48",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

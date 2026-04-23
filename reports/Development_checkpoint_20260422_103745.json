@@ -1,0 +1,28 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_login",
+          "name": "test_login",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: AssertionError: Page URL expected to be 'https://rahulshettyacademy.com/angularpractice/shop'\nActual value: about:blank \nCall log:\n  - Expect \"to_have_url\" with timeout 5000ms\n    8 \u00d7 unexpected value \"about:blank\"\nDetails: page = <Page url='about:blank'>\n\n    def test_login(page):\n>       expect(page).to_have_url(\"https://rahulshettyacademy.com/angularpractice/shop\")\nE       AssertionError: Page URL expected to be 'https://rahulshettyacademy.com/angularpractice/shop'\nE       Actual value: about:blank \nE       Call log:\nE         - Expect \"to_have_url\" with timeout 5000ms\nE           8 \u00d7 unexpected value \"about:blank\"\n\ntests\\test_login.py:6: AssertionError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "22 Apr 2026, 10:37",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

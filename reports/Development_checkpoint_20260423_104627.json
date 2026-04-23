@@ -1,0 +1,28 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_api",
+          "name": "test_get_user",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: AssertionError: assert 401 == 200\n +  where 401 = <APIResponse url='https://reqres.in/api/users/2' status=401 status_text='Unauthorized'>.status\nDetails: def test_get_user():\n        with sync_playwright() as p:\n            request = p.request.new_context()\n    \n            response = request.get(\"https://reqres.in/api/users/2\")\n    \n            print(\"STATUS:\", response.status)\n            print(\"BODY:\", response.text())\n    \n>           assert response.status == 200\nE           AssertionError: assert 401 == 200\nE            +  where 401 = <APIResponse url='https://reqres.in/api/users/2' status=401 status_text='Unauthorized'>.status\n\ntests\\test_api.py:12: AssertionError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "23 Apr 2026, 10:46",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

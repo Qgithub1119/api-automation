@@ -1,0 +1,28 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_login",
+          "name": "test_login",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: TypeError: Page.input_value() missing 1 required positional argument: 'selector'\nDetails: page = <Page url='https://rahulshettyacademy.com/loginpagePractise/'>\n\n    def test_login(page):\n        login= LoginPage(page)\n        login.navigate()\n        login.enter_username(\"rahulshettyacademy\")\n>       value = page.input_value()\n                ^^^^^^^^^^^^^^^^^^\nE       TypeError: Page.input_value() missing 1 required positional argument: 'selector'\n\ntests\\test_login.py:9: TypeError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "22 Apr 2026, 08:28",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

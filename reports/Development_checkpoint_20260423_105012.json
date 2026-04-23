@@ -1,0 +1,28 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_api",
+          "name": "test_get_user",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: playwright._impl._errors.Error: Event loop is closed! Is Playwright already stopped?\nDetails: def test_get_user():\n        with sync_playwright() as p:\n            request = p.request.new_context()\n    \n            response = request.get(\"https://jsonplaceholder.typicode.com/users/1\")\n    \n            print(\"STATUS:\", response.status)\n            print(\"BODY:\", response.text())\n    \n            assert response.status == 200\n    \n            request.dispose()\n>       data = response.json()\n               ^^^^^^^^^^^^^^^\n\ntests\\test_api.py:15: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <APIResponse url='https://jsonplaceholder.typicode.com/users/1' status=200 status_text='OK'>\n\n    def json(self) -> typing.Any:\n        \"\"\"APIResponse.json\n    \n        Returns the JSON representation of response body.\n    \n        This method will throw if the response body is not parsable via `JSON.parse`.\n    \n        Returns\n        -------\n        Any\n        \"\"\"\n    \n>       return mapping.from_maybe_impl(self._sync(self._impl_obj.json()))\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       playwright._impl._errors.Error: Event loop is closed! Is Playwright already stopped?\n\nvenv\\Lib\\site-packages\\playwright\\sync_api\\_generated.py:18268: Error",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "23 Apr 2026, 10:50",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

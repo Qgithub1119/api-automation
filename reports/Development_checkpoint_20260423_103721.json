@@ -1,0 +1,28 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_api",
+          "name": "test_get_user",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Setup failed: file C:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_api.py, line 1\n  def test_get_user(api_request_context):\nE       fixture 'api_request_context' not found\n>       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, cli_runner, doctest_namespace, extra, extras, include_metadata_in_junit_xml, logger, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, save_test_result, subtests, test_data, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nC:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_api.py:1",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "23 Apr 2026, 10:37",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

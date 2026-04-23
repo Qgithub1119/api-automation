@@ -1,0 +1,94 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_api",
+          "name": "test_get_user[users]",
+          "developer": "-",
+          "test_description": "",
+          "status": "Passed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "tests.test_api",
+          "name": "test_post_user",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Setup failed: playwright_instance = <playwright._impl._playwright.Playwright object at 0x000001C9E9ACE660>, request = <SubRequest 'api_request_context' for <Function test_post_user>>\n\n    @pytest.fixture\n    def api_request_context(playwright_instance, request):\n>       service = request.param\n                  ^^^^^^^^^^^^^\nE       AttributeError: 'SubRequest' object has no attribute 'param'\n\nconftest.py:53: AttributeError",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "tests.test_login",
+          "name": "test_login",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Setup failed: file C:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_login.py, line 5\n  def test_login(page):\nE       fixture 'page' not found\n>       available fixtures: api_request_context, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, cli_runner, doctest_namespace, extra, extras, include_metadata_in_junit_xml, logger, metadata, monkeypatch, playwright_instance, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, save_test_result, subtests, test_data, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nC:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_login.py:5",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "tests.test_login",
+          "name": "test_invalid_username",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Setup failed: file C:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_login.py, line 10\n  def test_invalid_username(page):\nE       fixture 'page' not found\n>       available fixtures: api_request_context, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, cli_runner, doctest_namespace, extra, extras, include_metadata_in_junit_xml, logger, metadata, monkeypatch, playwright_instance, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, save_test_result, subtests, test_data, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nC:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_login.py:10",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "tests.test_login",
+          "name": "test_invalid_password",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Setup failed: file C:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_login.py, line 22\n  def test_invalid_password(page):\nE       fixture 'page' not found\n>       available fixtures: api_request_context, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, cli_runner, doctest_namespace, extra, extras, include_metadata_in_junit_xml, logger, metadata, monkeypatch, playwright_instance, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, save_test_result, subtests, test_data, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nC:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_login.py:22",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "tests.test_shop_page",
+          "name": "test_shop_page_categories",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Setup failed: file C:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_shop_page.py, line 6\n  def test_shop_page_categories(page):\nE       fixture 'page' not found\n>       available fixtures: api_request_context, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, cli_runner, doctest_namespace, extra, extras, include_metadata_in_junit_xml, logger, metadata, monkeypatch, playwright_instance, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, save_test_result, subtests, test_data, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nC:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_shop_page.py:6",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "tests.test_shop_page",
+          "name": "test_remove_products",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Setup failed: file C:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_shop_page.py, line 24\n  def test_remove_products(page):\nE       fixture 'page' not found\n>       available fixtures: api_request_context, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, capteesys, cli_runner, doctest_namespace, extra, extras, include_metadata_in_junit_xml, logger, metadata, monkeypatch, playwright_instance, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, save_test_result, subtests, test_data, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory\n>       use 'pytest --fixtures [testpath]' for help on them.\n\nC:\\Users\\Owner\\playWrightProject\\actualProject\\tests\\test_shop_page.py:24",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "23 Apr 2026, 15:46",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

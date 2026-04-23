@@ -1,0 +1,39 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "tests.test_api",
+          "name": "test_get_user",
+          "developer": "-",
+          "test_description": "",
+          "status": "Passed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "tests.test_api",
+          "name": "test_post_user",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: AssertionError: assert 201 == 200\n +  where 201 = <APIResponse url='https://jsonplaceholder.typicode.com/users' status=201 status_text='Created'>.status\nDetails: api_request_context = <playwright._impl._fetch.APIRequestContext object at 0x00000148F61AFB60>\n\n    def test_post_user(api_request_context):\n        payload = {\n            \"name\": \"John\",\n            \"email\": \"john@test.com\"\n        }\n    \n        response = api_request_context.post(\n            \"/users\", data=payload\n        )\n    \n>       assert response.status == 200\nE       AssertionError: assert 201 == 200\nE        +  where 201 = <APIResponse url='https://jsonplaceholder.typicode.com/users' status=201 status_text='Created'>.status\n\ntests\\test_api.py:27: AssertionError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "23 Apr 2026, 14:31",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}
